@@ -6,6 +6,13 @@ class Jugador {
     private $nombre;
     private $posicion;
 
+    public function __construct(){
+
+    }
+
+    public function __destruct(){
+        echo "Se está destruyendo el objeto. " . $this->numero;
+    }
 
     public function jugar($nombre){
         echo "Estoy juagando $nombre...";
