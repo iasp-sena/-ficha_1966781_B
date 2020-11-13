@@ -10,3 +10,4 @@ define("DIR_SERVICE", DOCUMENT_ROOT . "/servicios/");
 
 
 include("autoload.php");
+include("funciones.php");

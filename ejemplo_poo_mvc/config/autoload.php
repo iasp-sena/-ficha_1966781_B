@@ -2,7 +2,7 @@
 
 function autoloadControlador($nombreClase){
     $rutaArchivo = DIR_CONTROLLER . $nombreClase . ".php";
-    echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
+    //echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
     if(file_exists($rutaArchivo)){
         require_once($rutaArchivo);
     }
@@ -10,7 +10,7 @@ function autoloadControlador($nombreClase){
 
 function autoloadModelo($nombreClase){
     $rutaArchivo = DIR_MODEL . $nombreClase . ".php";
-    echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
+    //echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
     if(file_exists($rutaArchivo)){
         require_once($rutaArchivo);
     }
@@ -18,7 +18,7 @@ function autoloadModelo($nombreClase){
 
 function autoloadVista($nombreClase){
     $rutaArchivo = DIR_VIEW . $nombreClase . ".php";
-    echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
+    //echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
     if(file_exists($rutaArchivo)){
         require_once($rutaArchivo);
     }
@@ -26,7 +26,7 @@ function autoloadVista($nombreClase){
 
 function autoloadServicio($nombreClase){
     $rutaArchivo = DIR_SERVICE . $nombreClase . ".php";
-    echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
+    //echo("Vamos a cargar la clase $nombreClase desde el la ruta: $rutaArchivo<br/>");
     if(file_exists($rutaArchivo)){
         require_once($rutaArchivo);
     } else{
