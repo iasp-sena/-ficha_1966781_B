@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 define("CONTEXT_APP", "/1966781B/ejemplo_poo_mvc");
 

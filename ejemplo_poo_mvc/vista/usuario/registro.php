@@ -1,8 +1,6 @@
 
     <div class="row">
-        <form class="col s12" action="<?= CONTEXT_APP . '/index.php' ?>" method="GET">
-            <input type="hidden" name="controller" value="Usuario" />
-            <input type="hidden" name="method" value="registrar" />
+        <form class="col s12" action="<?= getUrlControllerMethod('Usuario','registrar') ?>" method="GET">
             <div class="row">
                 <div class="input-field col s6">
                     <select name="tipoDocumento">

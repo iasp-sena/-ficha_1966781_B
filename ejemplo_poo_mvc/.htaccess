@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^(.*)/(.*)/(.*)$ index.php?controller=$1&method=$2&id=$3 [QSA,L]
+RewriteRule ^(.*)/(.*)$ index.php?controller=$1&method=$2 [QSA,L]

@@ -5,8 +5,10 @@ $nombreDelControlador = $_GET["controller"];
 $nombreDelMetodo = $_GET["method"];
 
 if($nombreDelControlador){
-    $nombreDelControlador .= "Controller";
-    $controller = new $nombreDelControlador();
-    //$otraCalse = new Usuario();
-    $controller->$nombreDelMetodo();
+    if(ValidacionSesion::validar($nombreDelControlador, $nombreDelMetodo)){
+        $nombreDelControlador .= "Controller";
+        $controller = new $nombreDelControlador();
+        //$otraCalse = new Usuario();
+        $controller->$nombreDelMetodo();
+    }
 }

@@ -31,8 +31,8 @@ class UsuarioController {
 
     public function registrar() {
         $usuario = new Usuario();
-        $usuario->setTipoDocumento($_GET["tipoDocumento"]);
-        $usuario->setNumeroDocumento($_GET["numeroDocumento"]);
+        $usuario->setTipoDocumento(filter_input(INPUT_GET, "tipoDocumento"));//$_GET["tipoDocumento"]);
+        $usuario->setNumeroDocumento(filter_input(INPUT_GET, "numeroDocumento"));
         $usuario->setNombres($_GET["nombres"]);
         $usuario->setApellidos($_GET["apellidos"]);
         $usuario->setNombreUsuario($_GET["nombreUsuario"]);
